@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.icon-trash {
+    position: absolute;
+    background-image: url("/assets/icons/trash-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+body {
+    background-color: #32323F;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    border-bottom: 1px solid #808080bb;
+}
+
+header div .logo {
+    text-decoration: none;
+    font-family: "Poppins", "Arial", "Helvetica", "sans-serif";
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+header .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header .buttons .button-clear-all {
+    background-color: #db2d2d;
+    font-family: "Manrope", "Arial", "Helvetica", "sans-serif";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    padding: 6px 16px;
+    border-radius: 6px;
+    user-select: none;
+}
+
+header .buttons .button-clear-all:hover {
+    font-weight: 800;
+    transition: 150ms;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+header .buttons .button-new-note {
+    background-color: #8a2be2;
+    font-family: "Manrope", "Arial", "Helvetica", "sans-serif";
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    padding: 10px 26px;
+    border-radius: 6px;
+    user-select: none;
+}
+
+header .buttons .button-new-note:hover {
+    font-weight: 800;
+    transition: 150ms;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+main {
+    display: flex;
+    padding: 24px;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+main ul li {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    gap: 12px;
+}
+
+main ul li div {
+    display: flex;
+}
+
+main ul li div input {
+    color: #252525;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0px 16px;
+    font-family: "Poppins", "Arial", "Helvetica", "sans-serif";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main ul li div .icon-trash {
+    background-size: 28px !important;
+    margin: 4px 0px 0px 224px;
+}
+
+main ul li div .icon-trash:hover {
+    transition: 200ms;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+main ul li textarea {
+    color: #000000;
+    width: 240px;
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    resize: none;
+    border-radius: 10px 0px 0px 0px;
+}
+
+/* width */
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* track */
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* thumb */
+textarea::-webkit-scrollbar-thumb {
+    background: #53535393;
+}
+
+/* thumb on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5ce8;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* thumb */
+::-webkit-scrollbar-thumb {
+    background: #2c2c2ccc;
+}
+
+/* thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5ce8;
+}
